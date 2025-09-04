@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Practice Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Practice Playground</h1>
+
+  <!-- ================================
+       Part 1: Event Handling Basics
+  ================================= -->
+  <section>
+    <h2>Part 1: Event Handling Basics</h2>
+    <button id="showMessageBtn">Click Me</button>
+    <p id="message">Hello! You triggered an event 🎉</p>
+
+    <div id="hoverBox">
+      Hover over me to change my color
+    </div>
+
+    <input type="text" id="keyInput" placeholder="Type something here...">
+    <p id="keyOutput"></p>
+  </section>
+
+  <!-- ================================
+       Part 2: Building Interactive Elements
+  ================================= -->
+  <section>
+    <h2>Part 2: Interactive Elements</h2>
+    <h3>Light mode / Dark mode</h3>
+    <button id="toggleThemeBtn">Toggle Light/Dark Mode</button>
+    <br><br>
+    <h3>Click Counter Game</h3>
+    <p>Score: <span id="score">0</span></p>
+    <button id="clickBtn">Click Me!</button>
+    <button id="resetBtn">Reset</button>
+    <br><br>
+    <h3>Collapsable box with hide/show features</h3>
+    <button id="toggleVisibilityBtn">Hide/Show Box</button>
+    <button id="toggleHighlightBtn">Toggle Highlight</button>
+    <div id="box">
+      This is a box. Hide/Show me!
+    </div>
+    <br><br>
+
+    <h3>Dropdown Menu Demo</h3>
+    <label for="fruitSelect">Choose a fruit:</label>
+    <select id="fruitSelect">
+    <option value="">--Select a fruit--</option>
+    <option value="apple">Apple </option>
+    <option value="banana">Banana </option>
+    <option value="orange">Orange </option>
+    <option value="grape">Grape </option>
+    </select>
+    <p id="selectedFruit">You selected: None</p>
+    </section>
+    <br><br>
+
+    <h3>Tabbed Interface Demo</h3>
+
+    <div class="tabs">
+    <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+    <button class="tab-btn" data-tab="tab2">Tab 2</button>
+    <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+
+    <div class="tab-content" id="tab1">
+    <p>This is content for Tab 1.</p>
+    </div>
+    <div class="tab-content hidden" id="tab2">
+    <p>This is content for Tab 2.</p>
+    </div>
+    <div class="tab-content hidden" id="tab3">
+    <p>This is content for Tab 3.</p>
+    </div>
+    <br><br>
+  <!-- ================================
+       Part 3: Form Validation
+  ================================= -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="practiceForm">
+      <label>Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+      <div id="emailError" class="error"></div>
+
+      <label>Password:</label>
+      <input type="password" id="password" placeholder="At least 6 chars, 1 number">
+      <div id="passwordError" class="error"></div>
+
+      <label>Username:</label>
+      <input type="text" id="username" placeholder="Focus & Blur demo">
+      <div id="usernameMsg" class="info"></div>
+
+      <button type="submit">Submit</button>
+      <div id="formFeedback"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

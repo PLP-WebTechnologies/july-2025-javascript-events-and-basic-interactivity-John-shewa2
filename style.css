@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+#message {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  display: none;
+}
+#box {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid black;
+}
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+form {
+  margin-top: 20px;
+  max-width: 400px;
+}
+input, button {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+.success {
+  color: green;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+body.dark-mode {
+  background-color: #444242;
+  color: #c83e3e;
+}
+
+#clickBtn, #resetBtn {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+select {
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  padding: 8px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background-color: #3187a3;
+  color: white;
+}
+
+.tab-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
